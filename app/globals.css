@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-text-primary: 23 23 23;
+  --color-text-secondary: 115 115 115;
+  --color-accent: 169 85 247;
+  --color-primary: 23 23 23;
+  --color-secondary: 115 115 115;
+  --color-danger: 244 63 94;
+  --color-warning: 234 179 8;
+  --color-success: 20 184 166;
+  --color-info: 6 182 212;
+  --color-link: 59 130 246;
+  --color-background: 255 255 255;
+  --color-foreground: 250 250 250;
+  --color-input: 212 212 212;
+  --color-separator: 229 229 229;
+  --color-hint: 245 245 245;
+  --color-focus: 191 219 254;
+  --color-text-primary-dark: 255 255 255;
+  --color-text-secondary-dark: 163 163 163;
+  --color-accent-dark: 192 132 252;
+  --color-primary-dark: 255 255 255;
+  --color-secondary-dark: 163 163 163;
+  --color-danger-dark: 251 113 133;
+  --color-warning-dark: 250 204 21;
+  --color-success-dark: 45 212 191;
+  --color-info-dark: 34 211 238;
+  --color-link-dark: 96 165 250;
+  --color-background-dark: 23 23 23;
+  --color-foreground-dark: 38 38 38;
+  --color-input-dark: 64 64 64;
+  --color-separator-dark: 38 38 38;
+  --color-hint-dark: 10 10 10;
+  --color-focus-dark: 30 64 175;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
